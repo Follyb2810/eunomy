@@ -1,0 +1,147 @@
+*{
+    margin: 0 15px ; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 ;
+    font-size: 18px;
+}
+.logo{
+    display: flex;
+    /* gap: 20px; */
+}
+nav >ol{
+   display: flex;
+   /* padding: 10px; */
+}
+ol> li{
+    list-style: none;
+    padding: 10px;
+}
+main{
+    /* height: 1256px; */
+    /* width: 667px; */
+    display: flex;
+    /* margin: 40px 50px 0; */
+    /* justify-content: space-between; */
+    align-items:center;
+    color: #1A3967;
+    
+}
+.mainContent >p{
+    /* margin: 10px ; */
+}
+.mainContent{
+    width:469px ;
+    height: 400px;
+    /* display: flex;
+    flex-direction: column; */
+    
+}
+.mainImage{
+ width: 670px;
+ height: 500px;
+}
+.learn{
+    background: #D6A419;
+    margin: 15px ;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+    }
+    .start{
+        border: none;
+        background-color: transparent;
+        margin-left: 10px ;
+        color: black;
+        font-weight: bold;
+        margin: 15px ;
+    }
+    .start:hover{
+        color: #d6a419;
+    }
+    .learn:hover{
+    background-color: #AB8314;
+    }
+.signUp{
+    /* border:1px solid black; */
+    background-color: #d6a419;
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+}
+.trusted{
+    margin: 20px auto;
+    border-radius: 20px;
+    border: 1px solid #D1D7E1;
+    width: 90%;
+    height: 120px;
+}
+.trusted >div{
+    font-size: 24px;
+    font-weight: bolder;
+    color: #1A3967;
+    transform: translate(20px,10px);
+}
+#trustedImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.solution{
+    background: #FBF6E8;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 90%;
+    height: 350px;
+    margin: 10px auto;
+    position: relative;
+    /* padding: 15px 20px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+
+    
+}
+.solutionContent{
+    padding: 20px 0;
+}
+.solutionDetails{
+    display: flex;
+    padding: 10px;
+
+}
+.solutionDetails li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#eunomy{
+    position: absolute;
+    left: 90%;
+    /* bottom: 10px; */
+    /* bottom: 100px; */
+
+}
+.compliance{
+    
+}
+.card{
+    border: 1px solid black;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 5px 10px rgba(65, 69, 77, 0.05);
+    border-radius: 10px;
+}
+.complianceCard{
+    display: flex;
+}
