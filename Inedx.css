@@ -1,9 +1,15 @@
+@font-face {
+    font-family: myFont;
+    src: url(sora.ttf);
+}
 *{
     margin: 0 15px ; 
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: myFont;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
+
 a{
     text-decoration: none;
 }
@@ -30,9 +36,10 @@ main{
     /* width: 667px; */
     display: flex;
     /* margin: 40px 50px 0; */
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items:center;
     color: #1A3967;
+    width: 90%;
     
 }
 .mainContent >p{
@@ -46,8 +53,9 @@ main{
     
 }
 .mainImage{
- width: 670px;
+ width: 100%;
  height: 500px;
+ padding-right: 0;
 }
 .learn{
     background: #D6A419;
@@ -96,27 +104,36 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow:row wrap;
+    /* display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center; */
 }
 .solution{
     background: #FBF6E8;
     border-radius: 20px;
     border: 1px solid black;
     width: 90%;
-    height: 350px;
+    height: 400px;
     margin: 10px auto;
     position: relative;
     /* padding: 15px 20px; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: center;
+    
 
     
 }
 .solutionContent{
+    /* display: flex; */
     padding: 20px 0;
 }
 .solutionDetails{
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
 
 }
@@ -126,14 +143,21 @@ main{
     align-items: center;
 }
 #eunomy{
+    width: 100px;
+    height: 100px;
     position: absolute;
     left: 90%;
-    /* bottom: 10px; */
+    top: 0px;
     /* bottom: 100px; */
 
 }
 .compliance{
-    
+    margin: 50px 0;
+    padding: 0 20px;   
+    width: 90%; 
+}
+.compliance h1{
+    padding-left: 20px;
 }
 .card{
     border: 1px solid black;
@@ -141,7 +165,141 @@ main{
     border: 1px solid #E0E0E0;
     box-shadow: 0px 5px 10px rgba(65, 69, 77, 0.05);
     border-radius: 10px;
+    height: 250px;
+    width: 20%;
+    padding: 20px 0 10px;
+    color: #1A3967;
+
+}
+.card > h3{
+    margin: 5px 0 10px 5px;
+    font-weight: 20px;
+}
+.card > span{
+    font-size: 16px;
+    margin: 5px ;
 }
 .complianceCard{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form{
+    padding:30px 110px;
+    /* width: 100%; */
+    /* margin: 0; */
+    background-image:linear-gradient( #EAF2F9 70%,#FFFFFF 30%);
+}
+.form >h3{
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 0 0 20px;
+}
+.footerForm{
+    display: flex;
+    flex-flow: wrap;
+    /* justify-content: space-between; */
+    gap: 20px;
+    background: #FFFFFF;
+    border: 1px solid #E8EBF0;
+    box-shadow: 0px 5px 10px rgba(65, 69, 77, 0.05);
+    border-radius: 10px;
+    /* width: 0%; */
+    padding: 20px;
+}
+#formData >label{
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight:bolder ;
+}
+#numberLabel{
+    transform: translateX(130px);
+}
+#formData >input,select,textarea {
+    outline-color:  #D6A419;
+    padding: 5px 10px; 
+    border-radius: 10px;
+ 
+    margin-top: 10px;
+
+}
+#Industry,#bussiness{
+    width: 400px;
+    height: 30px;
+}
+#email,#number{
+    width: 180px;
+    height: 30px;
+}
+#formButton{
+    background: #E6C875;
+    border-radius: 5px;
+    color: #fff;
+    width: 500px;
+    height: 30px;
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+    
+}
+.security{
+    border-radius:20px;
+    background-color: #1A3967;
+    padding: 20px 40px;
+    width: 90%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.security >div h3{
+    font-size: 18px;
+}
+.security > div p{
+    font-size: 16px;
+    margin: 20px 0 ;
+}
+.security >button{
+  display: block;
+  padding: 5px;
+  background-color: #D6A419;
+  border-radius: 10px;
+  border: none;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-top: 30px;
+}
+.eunomyLink{
     display: flex;
 }
+.eunomyLink >div ol a{
+    margin: 0;
+}
+#eunomyFoot{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+    background: #496185;
+    border-radius: 20px;
+    padding: 15px 30px;
+    color: #fff;
+}
+#eunomyFoot >ol {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+
+}
+
+
