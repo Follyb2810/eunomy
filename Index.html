@@ -12,15 +12,15 @@
    <header>
     <div class="logo">
         <div class="logoImg">
-            <img src="images/logo1.svg" alt="">
+            <img src="images/logo1.svg" alt="" >
             
         </div>
         <div>Features</div>
     </div>
     <nav>
         <ol>
-            <li><a href="#">Login</a></li>
-            <li><a href="#" class="signUp">Sign Up</a></li>
+            <li><a href="#formData">Login</a></li>
+            <li><a href="#formData" class="signUp">Sign Up</a></li>
         </ol>
     </nav>
    </header> 
@@ -49,12 +49,12 @@
    </div>
    <div class="solution">
        <div class="solutionContent">
-            <!-- <div> -->
+           <!-- <img src="images/Eunomy.svg" alt="" id="eunomy"> -->
+            <div>
                 <h3>Complete Compliance Solution</h3>
                 <p>Eunomy makes it simple to begin your path to compliance and swift<br>
                      track the security document in all-in-one,secure,alwysa on place </p>
-            <!-- </div> -->
-            <img src="images/Eunomy.svg" alt="" id="eunomy">
+            </div>
         </div>
         <ul class="solutionDetails">
 
@@ -79,22 +79,23 @@
     <h1>Compliance Standard</h1>
     <div class="complianceCard">
         <div class="card">
-            <img src="images/ndpr.svg" alt="">
+            <img src="images/aig.svg" alt="">
+            <!-- <img src="images/ndpr.svg" alt=""> -->
             <h3>NIGERIA DATA<br>PROTECTION REGULATION</h3>
-            <SPAn>LEARN MORE</SPAn>
+            <span>LEARN MORE</span>
         </div>
         <div class="card">
-            <img src="images/pci.svg" alt="">
+            <img src="images/pic.svg" alt="">
             <h3>PAYMENT CARD INDUSTRY<br>SATA SECURITY STANDARD</h3>
                 <span>LEARN MORE</span>
         </div>
         <div class="card">
-            <img src="images/iso.svg" alt="">
+            <img src="images/sonn.svg" alt="">
             <h3>INTERNATIONAL <br>ORGANISATION FOR <br>STANDARDIZATION</h3>
                 <span>LEARN MORE</span>
         </div>
         <div class="card">
-            <img src="images/aic.svg" alt="">
+            <img src="images/aiss.svg" alt="">
             <h3>AICPA<br>SERVICE ORGANISATION<br>CONTROL TWO</h3>
                 <span>LEARN MORE</span>
         </div>
@@ -120,13 +121,21 @@
                         <option value="">Administrator</option>
                         <option value="">Auditor</option>
                         <option value="">Colaborator</option>
-                </select><br>
-                    <label for="">Email*</label>
-                    <label for="" id="numberLabel">Phone number*</label><br>
-                    <input type="email" name="" id="email" placeholder="email@example.com">
-                    <input type="number" name="" id="number" placeholder="type here"><br>
+                </select><br>  
+                <div class="detailsForm">
+                    <div>
+                        <label for="">Email*</label><br/>
+                        <input type="email" name="" id="email" placeholder="email@example.com"><br/>
+                    </div>
+                    <div>
+                        <label for="" id="numberLabel">Phone number*</label><br/>
+                        <!-- <label for="" id="numberLabelmobile">Phone number*</label> -->
+                        <input type="number" name="" id="number" placeholder="type here"><br>
+                    </div>
+                </div>
+                        
                     <label for="">How may we help you</label><br/>
-                    <textarea name="" id="" cols="50" rows="5" placeholder="what questions do you eant to answer"></textarea><br>
+                    <textarea name="" id="" cols="30" rows="5" placeholder="what questions do you eant to answer"></textarea><br>
                     <button id="formButton">Send</button>
                 </form>               
     </div>
@@ -157,7 +166,7 @@
             </ol>
             
         </div>
-        <div class="eunomyLink">
+        <!-- <div class="eunomyLink"> -->
             <div>
                 <ol>
                     <h1>Links</h1>
@@ -178,7 +187,7 @@
                     
                 </ol>
             </div>
-        </div>
+        <!-- </div> -->
     </footer>
 </body>
 </html>
